@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    height: auto;
+    margin-bottom: 10px;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: 0.8;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+}
+
+.links ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.links ul li a {
+    text-decoration: none;
+}
+
+.idioma ul {
+    display: flex;
+}
+
+.idioma ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.contenedor {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.portada {
+    width: 100%;
+}
+
+.portada img {
+    width: 100%;
+}
+
+.cv {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.cv h2 {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: 4.5rem;
+    margin: 40px 0;
+    font-family: 'Bebas Neue';
+    letter-spacing: 3px;
+}
+
+.descripcion {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+}
+
+.descripcion img {
+    width: 20%;
+    height: 90%;
+    margin: 0 25px;
+    border-radius: 8px;
+}
+
+.descripcion p {
+    width: 50%;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.iconos {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.iconos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.iconos ul li {
+    list-style: none;
+    width: 5%;
+    margin: 0 10px;
+}
+
+.iconos ul li img {
+    width: 45%;
+}
+
+.iconos ul li i {
+    font-size: 2.4rem;
+}
+
+.listado-proyectos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.listado-proyectos h2 {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: 4.5rem;
+    margin: 40px 0;
+    font-family: 'Bebas Neue';
+    letter-spacing: 3px;
+}
+
+.list {
+    width: 81%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.proyecto {
+    width: 420px;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 30px;
+}
+
+.titulo {
+    display: flex;
+    align-items: baseline;
+    text-align: center;
+    width: 100%;
+}
+
+.titulo h3 {
+    font-size: 2rem;
+    margin-right: 5px;
+}
+
+.titulo h5 {
+    font-size: 1.2rem;
+}
+
+.proyecto img {
+    width: 400px;
+    height: 320px;
+    cursor: pointer;
+    border: 3px solid #000;
+    border-radius: 10px;
+}
+
+.contacto {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contacto h2 {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: 4.5rem;
+    margin: 40px 0;
+    font-family: 'Bebas Neue';
+    letter-spacing: 3px;
+}
+
+.contacto p {
+    width: 30%;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.redes {
+    justify-content: center;
+    width: 100%;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+.redes ul {
+    display: flex;
+    justify-content: center;
+}
+
+.redes ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.redes ul li i {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    padding: 25px;
+    text-align: center;
+}
+
+.footer h5 {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*
+https://coolors.co/353535-3c6e71-ffffff-d9d9d9-284b63
+*/
