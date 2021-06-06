@@ -218,11 +218,8 @@ body {
 
 .titulo h3 {
     font-size: 2rem;
+    color: #284b63;
     margin-right: 5px;
-}
-
-.titulo h5 {
-    font-size: 1.2rem;
 }
 
 .proyecto img {
@@ -442,6 +439,7 @@ https://coolors.co/353535-3c6e71-ffffff-d9d9d9-284b63
     }
     .titulo h3 {
         font-size: 1.7rem;
+        color: #284b63;
     }
     .proyecto img {
         width: 100%;
@@ -558,6 +556,7 @@ https://coolors.co/353535-3c6e71-ffffff-d9d9d9-284b63
     }
     .titulo h3 {
         font-size: 1.7rem;
+        color: #284b63;
     }
     .proyecto img {
         width: 100%;
@@ -680,6 +679,7 @@ https://coolors.co/353535-3c6e71-ffffff-d9d9d9-284b63
     }
     .titulo h3 {
         font-size: 1.7rem;
+        color: #284b63;
     }
     .proyecto img {
         width: 100%;
@@ -782,6 +782,7 @@ https://coolors.co/353535-3c6e71-ffffff-d9d9d9-284b63
     }
     .titulo h3 {
         font-size: 2rem;
+        color: #284b63;
     }
     .proyecto {
         width: 30%;
