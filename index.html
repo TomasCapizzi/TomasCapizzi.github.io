@@ -16,28 +16,37 @@
             <ul>
                 <li><a href="" class="link" id="link-home">Inicio</a></li>
                 <li>|</li>
-                <li><a href="" class="link" id="link-yo">Sobre mí</a></li>
+                <li><a href="#sobre-mi" class="link" id="link-yo">Sobre mí</a></li>
                 <li>|</li>
-                <li><a href="" class="link" id="link-proyectos">Proyectos</a></li>
+                <li><a href="#proyectos" class="link" id="link-proyectos">Proyectos</a></li>
                 <li>|</li>
-                <li><a href="" class="link" id="link-contacto">Contacto</a></li>
+                <li><a href="#contacto" class="link" id="link-contacto">Contacto</a></li>
 
             </ul>
         </div>
-        <div class="idioma">
-            <ul>
-                <li id="espanol">ES</li>
-                <li>/</li>
-                <li id="ingles">EN</li>
-            </ul>
+        <div class="menu-der">
+            <div class="idioma">
+                <ul>
+                    <li id="espanol">ES</li>
+                    <li>/</li>
+                    <li id="ingles">EN</li>
+                </ul>
+            </div>
+            <div class="modo-oscuro">
+                <button><i class="fas fa-sun"></i></button>
+            </div>
         </div>
     </header>
     <div class="contenedor">
         <div class="portada">
-            <img src="media/pexels-artem-podrez-4884118.jpg" alt="">
+            <img src="media/portada/portada-final.png" alt="">
         </div>
         <div class="cv">
-            <h2>Sobre mí</h2>
+            <h2 class="hide" id="sobre-mi">Sobre mí</h2>
+            <div class="img-titulo">
+                <img src="media/titulos/sobremiRecurso 3.png" alt="">
+            </div>
+
             <div class="descripcion">
                 <img src="media/115.jpg" alt="foto-perfil">
                 <p>Hola! Soy Tomas Capizzi, productor digital y actualmente enfoncandome en Desarrollo Front-End, con conocimientos en JavaScript, HTML y CSS; y aprendiendo React.
@@ -49,7 +58,7 @@
         <div class="iconos">
             <ul>
                 <li><i class="fab fa-html5"></i></li>
-                <li><i class="fab fa-html5"></i></li>
+                <li><i class="fab fa-css3-alt"></i></li>
                 <li><i class="fab fa-js-square"></i></li>
                 <li><i class="fab fa-github"></i></li>
                 <li><i class="fab fa-wordpress"></i></li>
@@ -60,12 +69,14 @@
             </ul>
         </div>
         <div class="listado-proyectos">
-            <h2>Proyectos</h2>
+            <h2 class="hide" id="proyectos">Proyectos</h2>
+            <div class="img-titulo">
+                <img src="media/titulos/proyectosRecurso 2.png" alt="">
+            </div>
             <div class="list">
                 <div class="proyecto">
                     <div class="titulo">
                         <h3>Brewers</h3>
-                        <h5>: Cervecerías del sur</h5>
                     </div>
                     <img src="media/webs/brewers.PNG" alt="">
                 </div>
@@ -79,7 +90,7 @@
                     <div class="titulo">
                         <h3>Memory Game</h3>
                     </div>
-                    <img src="media/webs/memory_game.PNG" alt="">
+                    <a href="https://tomascapizzi.github.io/memory-game/" target="_blank"> <img src="media/webs/memory_game.PNG" alt=""></a>
                 </div>
                 <div class="proyecto">
                     <div class="titulo">
@@ -89,9 +100,15 @@
                 </div>
                 <div class="proyecto">
                     <div class="titulo">
-                        <h3>Rick y Morty: Character finder</h3>
+                        <h3>Rick y Morty App</h3>
                     </div>
                     <img src="media/webs/rick_morty.PNG" alt="">
+                </div>
+                <div class="proyecto">
+                    <div class="titulo">
+                        <h3>Famox SA</h3>
+                    </div>
+                    <a href="http://www.famox.com.ar" target="_blank"><img src="media/webs/famox.PNG" alt=""></a>
                 </div>
                 <div class="proyecto">
                     <div class="titulo">
@@ -105,10 +122,19 @@
                     </div>
                     <img src="media/webs/budget_viaje.PNG" alt="">
                 </div>
+                <div class="proyecto">
+                    <div class="titulo">
+                        <h3>Memotest</h3>
+                    </div>
+                    <a href="https://tomascapizzi.github.io/memotest/"> <img src="media/webs/memotest.PNG" alt=""></a>
+                </div>
             </div>
         </div>
         <div class="contacto">
-            <h2>Contacto</h2>
+            <h2 class="hide" id="contacto">Contacto</h2>
+            <div class="img-titulo">
+                <img src="media/titulos/contactoRecurso 1.png" alt="">
+            </div>
             <p>Si mi perfil se adapta a lo que estas buscando, o algunos de mis proyectos te interesan, estoy abierto a recibir feedback y propuestas profesionales.¡No dudes en contactarte conmigo! </p>
             <div class="redes">
                 <ul>

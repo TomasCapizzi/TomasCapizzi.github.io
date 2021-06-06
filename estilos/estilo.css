@@ -14,19 +14,27 @@ body {
     margin: 0;
 }
 
-.menu {
+@media only screen and (min-width: 1080px) {
+    .menu {
+        display: flex;
+        height: auto;
+        margin-bottom: 10px;
+        width: 100%;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #3c6e71;
+        opacity: 0.8;
+        padding: 10px;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+.menu-der {
+    width: auto;
     display: flex;
-    height: auto;
-    margin-bottom: 10px;
-    width: 100%;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    opacity: 0.8;
-    padding: 10px;
-    font-family: 'Roboto', sans-serif;
+    margin: 0 5px;
 }
 
 .links ul {
@@ -41,6 +49,11 @@ body {
 
 .links ul li a {
     text-decoration: none;
+    color: #fff;
+}
+
+.links ul li a:hover {
+    color: #d9d9d9;
 }
 
 .idioma ul {
@@ -49,6 +62,19 @@ body {
 
 .idioma ul li {
     list-style: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.idioma ul li:hover {
+    color: #d9d9d9;
+}
+
+.modo-oscuro button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
     cursor: pointer;
 }
 
@@ -64,6 +90,7 @@ body {
 
 .portada img {
     width: 100%;
+    height: 910px;
 }
 
 .cv {
@@ -74,12 +101,24 @@ body {
     margin-bottom: 50px;
 }
 
+.img-titulo {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.img-titulo img {
+    width: 25%;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
 .cv h2 {
     justify-content: center;
     text-align: center;
     width: 100%;
     font-size: 4.5rem;
-    margin: 40px 0;
+    margin: 0px 0;
     font-family: 'Bebas Neue';
     letter-spacing: 3px;
 }
@@ -125,12 +164,20 @@ body {
 }
 
 .iconos ul li img {
-    width: 45%;
+    width: 35px;
 }
 
 .iconos ul li i {
     font-size: 2.4rem;
+    color: #3c6e71;
 }
+
+.iconos ul li i:hover {
+    color: #284b63;
+}
+
+
+/*color: #3c6e71;*/
 
 .listado-proyectos {
     width: 100%;
@@ -144,7 +191,7 @@ body {
     text-align: center;
     width: 100%;
     font-size: 4.5rem;
-    margin: 40px 0;
+    margin: 0px 0;
     font-family: 'Bebas Neue';
     letter-spacing: 3px;
 }
@@ -157,7 +204,6 @@ body {
 
 .proyecto {
     width: 420px;
-    position: relative;
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px 30px;
@@ -185,6 +231,15 @@ body {
     cursor: pointer;
     border: 3px solid #000;
     border-radius: 10px;
+    box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.6);
+    opacity: 0.9;
+}
+
+.proyecto img:hover {
+    border: 3px solid #9e9e9e;
+    width: 390px;
+    height: 315px;
+    opacity: 1;
 }
 
 .contacto {
@@ -199,7 +254,7 @@ body {
     text-align: center;
     width: 100%;
     font-size: 4.5rem;
-    margin: 40px 0;
+    margin: 0px 0;
     font-family: 'Bebas Neue';
     letter-spacing: 3px;
 }
@@ -208,6 +263,7 @@ body {
     width: 30%;
     text-align: justify;
     font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .redes {
@@ -230,12 +286,17 @@ body {
 .redes ul li i {
     font-size: 3rem;
     cursor: pointer;
+    color: #3c6e71;
+}
+
+.redes ul li i:hover {
+    color: #284b63;
 }
 
 .footer {
     width: 100%;
     justify-content: center;
-    background-color: #000;
+    background-color: #353535;
     color: #fff;
     padding: 25px;
     text-align: center;
@@ -245,7 +306,525 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.hide {
+    color: #fff;
+}
+
 
 /*
 https://coolors.co/353535-3c6e71-ffffff-d9d9d9-284b63
 */
+
+.select {
+    color: #3c6e71;
+}
+
+.idioma-seleccionado {
+    text-decoration: underline;
+}
+
+.dark {
+    background-color: #353535;
+    color: #fff;
+}
+
+
+/*   Responsive    */
+
+@media only screen and (max-width: 649px) {
+    .menu {
+        display: flex;
+        height: auto;
+        width: 100%;
+        background-color: #3c6e71;
+        opacity: 0.8;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .links {
+        justify-content: flex-start;
+    }
+    .links ul li {
+        list-style: none;
+        margin: 0 5px;
+    }
+    .links ul li a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: #fff;
+    }
+    .idioma {
+        justify-content: flex-end;
+    }
+    .idioma ul li {
+        list-style: none;
+        cursor: pointer;
+        color: #fff;
+        font-size: 1rem;
+    }
+    .idioma ul li:hover {
+        color: #d9d9d9;
+    }
+    .contenedor {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .portada {
+        width: 100%;
+    }
+    .portada img {
+        width: 100%;
+        height: 300px;
+    }
+    .cv {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .img-titulo {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .img-titulo img {
+        width: 40%;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .cv h2 {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        font-size: 1rem;
+    }
+    .descripcion {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    .descripcion img {
+        width: 40%;
+        height: 180px;
+        margin: 10px 25px;
+        border-radius: 8px;
+    }
+    .descripcion p {
+        justify-content: center;
+        width: 90%;
+        font-size: 1.1rem;
+        font-weight: 300;
+        text-align: center;
+    }
+    .listado-proyectos {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .listado-proyectos h2 {
+        font-size: 1rem;
+    }
+    .list {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .proyecto {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 15px 15px;
+    }
+    .titulo h3 {
+        font-size: 1.7rem;
+    }
+    .proyecto img {
+        width: 100%;
+        height: 220px;
+        cursor: pointer;
+        border: 3px solid #000;
+        border-radius: 8px;
+        box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.6);
+    }
+    .proyecto img:hover {
+        border: 3px solid #9e9e9e;
+        width: 99%;
+        height: 215px;
+        opacity: 1;
+    }
+    .contacto h2 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .contacto p {
+        width: 80%;
+        text-align: center;
+        font-size: 1.1rem;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1000px) {
+    .menu {
+        display: flex;
+        height: auto;
+        width: 100%;
+        background-color: #3c6e71;
+        opacity: 0.8;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        justify-content: space-between;
+    }
+    .links {
+        margin-left: -20px;
+    }
+    .contenedor {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .portada img {
+        width: 100%;
+        height: 400px;
+    }
+    .cv {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .img-titulo {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .img-titulo img {
+        width: 30%;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .cv h2 {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    .descripcion {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    .descripcion img {
+        width: 40%;
+        height: 240px;
+        margin: 10px 25px;
+        border-radius: 8px;
+    }
+    .descripcion p {
+        justify-content: center;
+        width: 90%;
+        font-size: 1.1rem;
+        font-weight: 300;
+        text-align: center;
+    }
+    .listado-proyectos {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .listado-proyectos h2 {
+        font-size: 1rem;
+    }
+    .list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .proyecto {
+        width: 45%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 15px 15px;
+    }
+    .titulo h3 {
+        font-size: 1.7rem;
+    }
+    .proyecto img {
+        width: 100%;
+        height: 220px;
+        cursor: pointer;
+        border: 3px solid #000;
+        border-radius: 8px;
+        box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.6);
+    }
+    .proyecto img:hover {
+        border: 3px solid #9e9e9e;
+        width: 99%;
+        height: 215px;
+        opacity: 1;
+    }
+    .contacto h2 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .contacto p {
+        width: 80%;
+        text-align: center;
+        font-size: 1.1rem;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1250px) {
+    .menu {
+        display: flex;
+        height: auto;
+        width: 100%;
+        background-color: #3c6e71;
+        opacity: 0.8;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        justify-content: space-between;
+    }
+    .links {
+        margin-left: -20px;
+    }
+    .links ul li a {
+        font-size: 1.2rem;
+    }
+    .idioma ul li {
+        font-size: 1.2rem;
+    }
+    .contenedor {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .portada img {
+        width: 100%;
+        height: 550px;
+    }
+    .cv {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .img-titulo {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .img-titulo img {
+        width: 30%;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .cv h2 {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        font-size: 2.3rem;
+    }
+    .descripcion {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    .descripcion img {
+        width: 30%;
+        height: 240px;
+        margin: 10px 25px;
+        border-radius: 8px;
+    }
+    .descripcion p {
+        justify-content: center;
+        width: 55%;
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-align: center;
+    }
+    .listado-proyectos {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .listado-proyectos h2 {
+        font-size: 1rem;
+    }
+    .list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .proyecto {
+        width: 40%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 15px 40px;
+    }
+    .titulo h3 {
+        font-size: 1.7rem;
+    }
+    .proyecto img {
+        width: 100%;
+        height: 220px;
+        cursor: pointer;
+        border: 3px solid #000;
+        border-radius: 8px;
+        box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.6);
+    }
+    .proyecto img:hover {
+        border: 3px solid #9e9e9e;
+        width: 98%;
+        height: 215px;
+        opacity: 1;
+    }
+    .contacto h2 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .contacto p {
+        width: 80%;
+        text-align: center;
+        font-size: 1.1rem;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+@media only screen and (min-width: 1250px) and (max-width: 1600px) {
+    .menu {
+        display: flex;
+        height: auto;
+        width: 100%;
+        background-color: #3c6e71;
+        opacity: 0.8;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        justify-content: space-between;
+    }
+    .portada img {
+        width: 100%;
+        height: 650px;
+    }
+    .cv {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .img-titulo {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .img-titulo img {
+        width: 30%;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .cv h2 {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        font-size: 2.3rem;
+    }
+    .descripcion {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+    .descripcion img {
+        width: 25%;
+        height: 260px;
+        margin: 10px 25px;
+        border-radius: 8px;
+    }
+    .descripcion p {
+        justify-content: center;
+        width: 50%;
+        font-size: 1.2rem;
+        font-weight: 300;
+        text-align: justify;
+    }
+    .listado-proyectos {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .listado-proyectos h2 {
+        font-size: 1rem;
+    }
+    .list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .titulo h3 {
+        font-size: 2rem;
+    }
+    .proyecto {
+        width: 30%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 15px 20px;
+    }
+    .proyecto img {
+        width: 100%;
+        height: 250px;
+        cursor: pointer;
+        border: 3px solid #000;
+        border-radius: 8px;
+        box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.6);
+    }
+    .proyecto img:hover {
+        border: 3px solid #9e9e9e;
+        width: 97%;
+        height: 245px;
+        opacity: 1;
+    }
+    .contacto h2 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .contacto p {
+        width: 50%;
+        text-align: center;
+        font-size: 1.1rem;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1800px) {
+    .portada img {
+        width: 100%;
+        height: 800px;
+    }
+    .proyecto {
+        width: 30%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 15px 20px;
+    }
+}
