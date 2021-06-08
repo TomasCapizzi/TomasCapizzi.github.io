@@ -1,12 +1,6 @@
 'use strict'
 const body = document.getElementById('body');
 
-/*
-btnEsp.addEventListener('click', () => {
-    lenguajeEsp();
-});
-
-*/
 
 function lenguajeEsp() {
     body.innerHTML = `
@@ -32,7 +26,8 @@ function lenguajeEsp() {
         </ul>
     </div>
     <div class="modo-oscuro">
-        <button><i class="fas fa-sun"></i></button>
+    <button id="btn-day"  class='oculto'><i class="fas fa-sun"></i></button>
+    <button id="btn-night" class='oculto'><i class="fas fa-moon"></i></button>
     </div>
 </div>
 </header>
@@ -161,6 +156,13 @@ function lenguajeEsp() {
         body.innerHTML = '';
         translate()
     });
+
+
+
+
+
+
+
 }
 
 lenguajeEsp();
@@ -189,7 +191,8 @@ function translate() {
             </ul>
         </div>
         <div class="modo-oscuro">
-            <button><i class="fas fa-sun"></i></button>
+            <button id="btn-day"  class='oculto'><i class="fas fa-sun"></i></button>
+            <button id="btn-night" class='oculto'><i class="fas fa-moon"></i></button>
         </div>
     </div>
     </header>
@@ -317,4 +320,5 @@ function translate() {
         body.innerHTML = '';
         translate()
     });
+
 }
