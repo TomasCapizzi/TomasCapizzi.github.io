@@ -304,6 +304,7 @@ body {
 
 .hide {
     color: #fff;
+    user-select: none;
 }
 
 
