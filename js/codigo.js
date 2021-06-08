@@ -148,6 +148,7 @@ function lenguajeEsp() {
     const btnEsp = document.getElementById('espanol');
     const btnIng = document.getElementById('ingles');
 
+
     btnEsp.addEventListener('click', () => {
         body.innerHTML = ''
         lenguajeEsp();
