@@ -248,10 +248,11 @@ function translate() {
             </div>
             <div class="proyecto">
                 <div class="titulo">
-                    <h3>Memory Game</h3>
+                    <h3>Memotest</h3>
                 </div>
-                <a href="https://tomascapizzi.github.io/memory-game/" target="_blank"> <img src="media/webs/memory_game.PNG" alt=""></a>
+                <a href="https://tomascapizzi.github.io/memotest/" target="_blank"> <img src="media/webs/memotest.PNG" alt=""></a>
             </div>
+
             <div class="proyecto">
                 <div class="titulo">
                     <h3>Expense Control</h3>
@@ -282,12 +283,13 @@ function translate() {
                 </div>
                 <img src="media/webs/budget_viaje.PNG" alt="">
             </div>
+           
             <div class="proyecto">
-                <div class="titulo">
-                    <h3>Memotest</h3>
-                </div>
-                <a href="https://tomascapizzi.github.io/memotest/" target="_blank"> <img src="media/webs/memotest.PNG" alt=""></a>
+            <div class="titulo">
+                <h3>Memory Game</h3>
             </div>
+            <a href="https://tomascapizzi.github.io/memory-game/" target="_blank"> <img src="media/webs/memory_game.PNG" alt=""></a>
+        </div>
         </div>
     </div>
     <div class="contacto">
