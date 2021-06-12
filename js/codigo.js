@@ -17,6 +17,17 @@ function lenguajeEsp() {
 
     </ul>
 </div>
+<div class="menu-hamburguesa oculto" id="menu-h">
+<button class="boton" id="btn-burga"><i class="fas fa-bars"></i></button>
+    <nav id="lista">
+        <ul>
+            <li><a href="" class="h-link">Inicio</a></li>
+            <li><a href="#sobre-mi" class="h-link">Sobre Mí</a></li>
+            <li><a href="#proyectos" class="h-link">Proyectos</a></li>
+            <li><a href="#contacto" class="h-link">Contacto</a></li>
+        </ul>
+    </nav>
+</div>
 <div class="menu-der">
     <div class="idioma">
         <ul>
@@ -78,7 +89,7 @@ function lenguajeEsp() {
             <div class="titulo">
                 <h3>Pokédex</h3>
             </div>
-            <img src="media/webs/pokedex.PNG" alt="">
+            <a href="https://tomascapizzi.github.io/pokedex/" target="_blank"><img src="media/webs/pokedex.PNG" alt=""></a>
         </div>
         <div class="proyecto">
         <div class="titulo">
@@ -244,7 +255,7 @@ function translate() {
                 <div class="titulo">
                     <h3>Pokédex</h3>
                 </div>
-                <img src="media/webs/pokedex.PNG" alt="">
+                <a href="https://tomascapizzi.github.io/pokedex/" target="_blank"><img src="media/webs/pokedex.PNG" alt=""></a>
             </div>
             <div class="proyecto">
                 <div class="titulo">
