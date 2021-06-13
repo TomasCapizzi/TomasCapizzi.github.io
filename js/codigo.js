@@ -5,42 +5,49 @@ const body = document.getElementById('body');
 function lenguajeEsp() {
     body.innerHTML = `
 <header class="menu">
-<div class="links">
-    <ul>
-        <li><a href="" class="link" id="link-home">Inicio</a></li>
-        <li>|</li>
-        <li><a href="#sobre-mi" class="link" id="link-yo">Sobre mí</a></li>
-        <li>|</li>
-        <li><a href="#proyectos" class="link" id="link-proyectos">Proyectos</a></li>
-        <li>|</li>
-        <li><a href="#contacto" class="link" id="link-contacto">Contacto</a></li>
+    <div class="links" id="menu-normal">
+        <ul>
+            <li><a href="" class="link" id="link-home">Inicio</a></li>
+            <li>|</li>
+          <li><a href="#sobre-mi" class="link" id="link-yo">Sobre mí</a></li>
+          <li>|</li>
+          <li><a href="#proyectos" class="link" id="link-proyectos">Proyectos</a></li>
+          <li>|</li>
+          <li><a href="#contacto" class="link" id="link-contacto">Contacto</a></li>
 
-    </ul>
-</div>
-<div class="menu-hamburguesa oculto" id="menu-h">
-<button class="boton" id="btn-burga"><i class="fas fa-bars"></i></button>
-    <nav id="lista">
-        <ul>
-            <li><a href="" class="h-link">Inicio</a></li>
-            <li><a href="#sobre-mi" class="h-link">Sobre Mí</a></li>
-            <li><a href="#proyectos" class="h-link">Proyectos</a></li>
-            <li><a href="#contacto" class="h-link">Contacto</a></li>
-        </ul>
-    </nav>
-</div>
-<div class="menu-der">
-    <div class="idioma">
-        <ul>
-            <li id="espanol">ES</li>
-            <li>/</li>
-            <li id="ingles">EN</li>
-        </ul>
+      </ul>
     </div>
-    <div class="modo-oscuro">
-    <button id="btn-day"  class='oculto'><i class="fas fa-sun"></i></button>
-    <button id="btn-night" class='oculto'><i class="fas fa-moon"></i></button>
+    <div class="menu-der">
+        <div class="idioma">
+                <ul>
+                    <li id="espanol">ES</li>
+                    <li>/</li>
+                    <li id="ingles">EN</li>
+                </ul>
+            </div>
     </div>
-</div>
+</header>
+<header class="menu-responsive">
+    <div class="menu-hamburguesa" id="menu-h">
+        <button class="boton" id="btn-burga"><i class="fas fa-bars"></i></button>
+         <nav id="lista">
+             <ul>
+               <li><a href="" class="h-link">Inicio</a></li>
+               <li><a href="#sobre-mi" class="h-link">Sobre Mí</a></li>
+               <li><a href="#proyectos" class="h-link">Proyectos</a></li>
+               <li><a href="#contacto" class="h-link">Contacto</a></li>
+           </ul>
+        </nav>
+    </div>
+    <div class="menu-der">
+        <div class="idioma">
+                <ul>
+                    <li id="espanol-responsive">ES</li>
+                    <li>/</li>
+                    <li id="ingles-responsive">EN</li>
+                </ul>
+            </div>
+    </div>
 </header>
 <div class="contenedor">
 <div class="portada">
@@ -160,7 +167,6 @@ function lenguajeEsp() {
     const btnEsp = document.getElementById('espanol');
     const btnIng = document.getElementById('ingles');
 
-
     btnEsp.addEventListener('click', () => {
         body.innerHTML = ''
         lenguajeEsp();
@@ -171,10 +177,28 @@ function lenguajeEsp() {
     });
 
 
+    // Para el menú Responsive
+    const btnEspResponsive = document.getElementById('espanol-responsive');
+    const btnIngResponsive = document.getElementById('ingles-responsive');
+
+    btnEspResponsive.addEventListener('click', () => {
+        body.innerHTML = ''
+        lenguajeEsp();
+    });
+    btnIngResponsive.addEventListener('click', () => {
+        body.innerHTML = '';
+        translate()
+    });
 
 
+    ////////////////
 
+    const btnHamb = document.getElementById('btn-burga');
+    const menu = document.getElementById('lista');
 
+    btnHamb.addEventListener('click', () => {
+        menu.classList.toggle('on');
+    })
 
 }
 
@@ -183,32 +207,50 @@ lenguajeEsp();
 function translate() {
     body.innerHTML = `
     <header class="menu">
-    <div class="links">
+    <div class="links" id="menu-normal">
         <ul>
             <li><a href="" class="link" id="link-home">Home</a></li>
             <li>|</li>
-            <li><a href="#sobre-mi" class="link" id="link-yo">About me</a></li>
-            <li>|</li>
-            <li><a href="#proyectos" class="link" id="link-proyectos">Proyects</a></li>
-            <li>|</li>
-            <li><a href="#contacto" class="link" id="link-contacto">Contact</a></li>
-    
-        </ul>
+          <li><a href="#sobre-mi" class="link" id="link-yo">About me</a></li>
+          <li>|</li>
+          <li><a href="#proyectos" class="link" id="link-proyectos">Projects</a></li>
+          <li>|</li>
+          <li><a href="#contacto" class="link" id="link-contacto">Contact</a></li>
+
+      </ul>
     </div>
     <div class="menu-der">
         <div class="idioma">
-            <ul>
-                <li id="espanol">ES</li>
-                <li>/</li>
-                <li id="ingles">EN</li>
-            </ul>
-        </div>
-        <div class="modo-oscuro">
-            <button id="btn-day"  class='oculto'><i class="fas fa-sun"></i></button>
-            <button id="btn-night" class='oculto'><i class="fas fa-moon"></i></button>
-        </div>
+                <ul>
+                    <li id="espanol">ES</li>
+                    <li>/</li>
+                    <li id="ingles">EN</li>
+                </ul>
+            </div>
     </div>
-    </header>
+</header>
+<header class="menu-responsive">
+    <div class="menu-hamburguesa" id="menu-h">
+        <button class="boton" id="btn-burga"><i class="fas fa-bars"></i></button>
+         <nav id="lista">
+             <ul>
+               <li><a href="" class="h-link">Home</a></li>
+               <li><a href="#sobre-mi" class="h-link">About me</a></li>
+               <li><a href="#proyectos" class="h-link">Projects</a></li>
+               <li><a href="#contacto" class="h-link">Contact</a></li>
+           </ul>
+        </nav>
+    </div>
+    <div class="menu-der">
+        <div class="idioma">
+                <ul>
+                <li id="espanol-responsive">ES</li>
+                <li>/</li>
+                <li id="ingles-responsive">EN</li>
+                </ul>
+            </div>
+    </div>
+</header>
     <div class="contenedor">
     <div class="portada">
         <img src="media/portada/portada-ingles.png" alt="">
@@ -335,5 +377,26 @@ function translate() {
         body.innerHTML = '';
         translate()
     });
+
+    // Para el menú responsive
+    const btnEspResponsive = document.getElementById('espanol-responsive');
+    const btnIngResponsive = document.getElementById('ingles-responsive');
+
+    btnEspResponsive.addEventListener('click', () => {
+        body.innerHTML = ''
+        lenguajeEsp();
+    });
+    btnIngResponsive.addEventListener('click', () => {
+        body.innerHTML = '';
+        translate()
+    });
+
+    /////////////  Menu Responsive //////////
+    const btnHamb = document.getElementById('btn-burga');
+    const menu = document.getElementById('lista');
+
+    btnHamb.addEventListener('click', () => {
+        menu.classList.toggle('on');
+    })
 
 }

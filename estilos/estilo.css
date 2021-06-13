@@ -14,23 +14,6 @@ body {
     margin: 0;
 }
 
-@media only screen and (min-width: 1080px) {
-    .menu {
-        display: flex;
-        height: auto;
-        margin-bottom: 10px;
-        width: 100%;
-        justify-content: space-between;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: #3c6e71;
-        opacity: 0.8;
-        padding: 10px;
-        font-family: 'Roboto', sans-serif;
-    }
-}
-
 .menu-der {
     width: auto;
     display: flex;
@@ -329,11 +312,18 @@ https://coolors.co/353535-3c6e71-ffffff-d9d9d9-284b63
     color: #fff;
 }
 
+.menu-responsive {
+    display: none;
+}
+
 
 /*   Responsive    */
 
 @media only screen and (max-width: 649px) {
     .menu {
+        display: none;
+    }
+    .menu-responsive {
         display: flex;
         height: auto;
         width: 100%;
@@ -343,17 +333,35 @@ https://coolors.co/353535-3c6e71-ffffff-d9d9d9-284b63
         font-family: 'Roboto', sans-serif;
         justify-content: space-between;
     }
-    .links {
-        justify-content: flex-start;
-    }
-    .links ul li {
-        list-style: none;
-        margin: 0 5px;
-    }
-    .links ul li a {
-        text-decoration: none;
-        font-size: 1rem;
+    .menu-hamburguesa button {
+        background-color: transparent;
         color: #fff;
+        border: none;
+        font-size: 1rem;
+    }
+    nav {
+        position: absolute;
+        left: 0;
+        top: 20px;
+        padding: 20px;
+        background-color: #3c6e71;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+    nav.on {
+        transform: translateX(0);
+    }
+    nav ul {
+        list-style: none;
+        margin: 15px 0;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.1rem;
+    }
+    nav ul li {
+        margin-top: 20px;
     }
     .idioma {
         justify-content: flex-end;
@@ -586,6 +594,23 @@ https://coolors.co/353535-3c6e71-ffffff-d9d9d9-284b63
         width: 80%;
         text-align: center;
         font-size: 1.1rem;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .menu {
+        display: flex;
+        height: auto;
+        margin-bottom: 10px;
+        width: 100%;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #3c6e71;
+        opacity: 0.8;
+        padding: 10px;
         font-family: 'Roboto', sans-serif;
     }
 }
