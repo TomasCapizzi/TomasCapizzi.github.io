@@ -434,6 +434,19 @@ https://coolors.co/353535-3c6e71-ffffff-d9d9d9-284b63
         font-weight: 300;
         text-align: center;
     }
+    .iconos {
+        width: 95%;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+    .iconos ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
     .listado-proyectos {
         width: 100%;
         display: flex;
