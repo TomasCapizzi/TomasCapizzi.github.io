@@ -54,11 +54,7 @@ function lenguajeEsp() {
     <img src="media/portada/portada-final.png" alt="">
 </div>
 <div class="cv">
-    <h2 class="hide" id="sobre-mi">Sobre mí</h2>
-    <div class="img-titulo">
-        <img src="media/titulos/sobre-mi.png" alt="">
-    </div>
-
+    <h2 class="subtitle" id="sobre-mi">Sobre mí</h2>
     <div class="descripcion">
         <img src="media/115.jpg" alt="foto-perfil">
         <p>Hola! Soy Tomas Capizzi, productor digital y actualmente enfoncandome en Desarrollo Front-End, con conocimientos en JavaScript, HTML y CSS; y aprendiendo React.
@@ -74,17 +70,14 @@ function lenguajeEsp() {
         <li><i class="fab fa-js-square"></i></li>
         <li><i class="fab fa-github"></i></li>
         <li><i class="fab fa-wordpress"></i></li>
-        <li><img src="media/icono/photoshop.svg" alt="logo Photoshop"></li>
-        <li><img src="media/icono/illustrator.svg" alt="Logo Illustrator"></li>
-        <li><img src="media/icono/premiere.svg" alt="Logo Premiere"></li>
-        <li><img src="media/icono/after-effects.svg" alt="Logo After Effects"></li>
+        <li><img src="media/icono/adobephotoshop.svg" alt="logo Photoshop"></li>
+        <li><img src="media/icono/adobeillustrator.svg" alt="Logo Illustrator"></li>
+        <li><img src="media/icono/adobepremierepro.svg" alt="Logo Premiere"></li>
+        <li><img src='media/icono/adobeaftereffects.svg'></li>
     </ul>
 </div>
 <div class="listado-proyectos">
-    <h2 class="hide" id="proyectos">Proyectos</h2>
-    <div class="img-titulo">
-        <img src="media/titulos/proyectos.png" alt="">
-    </div>
+    <h2 class="subtitle" id="proyectos">Proyectos</h2>
     <div class="list">
         <div class="proyecto">
             <div class="titulo">
@@ -144,10 +137,7 @@ function lenguajeEsp() {
     </div>
 </div>
 <div class="contacto">
-    <h2 class="hide" id="contacto">Contacto</h2>
-    <div class="img-titulo">
-        <img src="media/titulos/contacto.png" alt="">
-    </div>
+    <h2 class="subtitle" id="contacto">Contacto</h2>
     <p>Si mi perfil se adapta a lo que estas buscando, o algunos de mis proyectos te interesan, estoy abierto a recibir feedback y propuestas profesionales.¡No dudes en contactarte conmigo! </p>
     <div class="redes">
         <ul>
@@ -251,7 +241,7 @@ function translate() {
             </div>
     </div>
 </header>
-    <div class="contenedor">
+<div class="contenedor">
     <div class="portada">
         <img src="media/portada/portada-ingles.png" alt="">
     </div>
@@ -259,8 +249,7 @@ function translate() {
         <h2 class="hide" id="sobre-mi">Sobre mí</h2>
         <div class="img-titulo">
             <img src="media/titulos/about-me.png" alt="">
-        </div>
-    
+        </div>    
         <div class="descripcion">
             <img src="media/115.jpg" alt="foto-perfil">
             <p> Hi! Mi name is Tomas Capizzi, i´m a digital producer and currently i´m focusing on Front-End development, with knowledge´s on Javascript, Html and CSS; and learning the basics of React.
