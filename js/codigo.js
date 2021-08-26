@@ -241,10 +241,7 @@ function translate() {
 </header>
 <div class="contenedor">
     <div class="cv">
-        <h2 class="hide" id="sobre-mi">Sobre mí</h2>
-        <div class="img-titulo">
-            <img src="media/titulos/about-me.png" alt="">
-        </div>    
+        <h2 class="subtitle" id="sobre-mi">About Me</h2>
         <div class="descripcion">
             <img src="media/115.jpg" alt="foto-perfil">
             <p> Hi! Mi name is Tomas Capizzi, i´m a digital producer and currently i´m focusing on Front-End development, with knowledge´s on Javascript, Html and CSS; and learning the basics of React.
@@ -267,10 +264,7 @@ function translate() {
         </ul>
     </div>
     <div class="listado-proyectos">
-        <h2 class="hide" id="proyectos">Proyectos</h2>
-        <div class="img-titulo">
-            <img src="media/titulos/projects.png" alt="">
-        </div>
+        <h2 class="subtitle" id="proyectos">Projects</h2>
         <div class="list">
             <div class="proyecto">
                 <div class="titulo">
@@ -331,10 +325,7 @@ function translate() {
         </div>
     </div>
     <div class="contacto">
-        <h2 class="hide" id="contacto">Contacto</h2>
-        <div class="img-titulo">
-            <img src="media/titulos/contact.png" alt="">
-        </div>
+        <h2 class="subtitle" id="contacto">Contact</h2>
         <p> If my profile adjusts to waht you´re looking for, or some of my projects are of youre interest, i´m open to feedback and profesional proposals. ¡Don't doubt on contacting me! </p>
         <div class="redes">
             <ul>
