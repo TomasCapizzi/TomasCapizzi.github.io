@@ -15,6 +15,21 @@ body {
     margin: 0;
     background-color: #293242;
 }
+.menu {
+    display: flex;
+    height: auto;
+    margin-bottom: 10px;
+    background-color: #3E5B80;
+    width: 100%;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
 
 .menu-der {
     width: auto;
@@ -308,7 +323,6 @@ body {
         display: flex;
         height: auto;
         width: 100%;
-        background-color: #3c6e71;
         opacity: 0.8;
         padding: 5px;
         font-family: 'Roboto', sans-serif;
@@ -316,7 +330,6 @@ body {
     }
     .menu-hamburguesa button {
         background-color: transparent;
-        color: #fff;
         border: none;
         font-size: 1rem;
     }
@@ -325,7 +338,6 @@ body {
         left: 0;
         top: 20px;
         padding: 20px;
-        background-color: #3c6e71;
         transform: translateX(-100%);
         transition: transform 0.3s ease-in-out;
     }
@@ -338,7 +350,6 @@ body {
     }
     nav ul li a {
         text-decoration: none;
-        color: #fff;
         font-size: 1.1rem;
     }
     nav ul li {
@@ -350,7 +361,6 @@ body {
     .idioma ul li {
         list-style: none;
         cursor: pointer;
-        color: #fff;
         font-size: 1rem;
     }
     .idioma ul li:hover {
@@ -369,7 +379,6 @@ body {
         height: 300px;
     }
     .subtitle{
-        color: #3c6e71;
         font-family: 'Lobster', cursive;
         font-size: 1.8rem;
         justify-content: center;
@@ -449,18 +458,15 @@ body {
     }
     .titulo h3 {
         font-size: 1.7rem;
-        color: #284b63;
     }
     .proyecto img {
         width: 100%;
         height: 220px;
         cursor: pointer;
-        border: 3px solid #000;
         border-radius: 8px;
         box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.6);
     }
     .proyecto img:hover {
-        border: 3px solid #9e9e9e;
         width: 99%;
         height: 215px;
         opacity: 1;
@@ -478,7 +484,6 @@ body {
         display: flex;
         height: auto;
         width: 100%;
-        background-color: #3c6e71;
         opacity: 0.8;
         padding: 5px;
         font-family: 'Roboto', sans-serif;
@@ -514,7 +519,6 @@ body {
         margin-bottom: 30px;
     }
     .subtitle{
-        color: #3c6e71;
         font-family: 'Lobster', cursive;
         font-size: 1.8rem;
         justify-content: center;
@@ -564,18 +568,15 @@ body {
     }
     .titulo h3 {
         font-size: 1.7rem;
-        color: #284b63;
     }
     .proyecto img {
         width: 100%;
         height: 220px;
         cursor: pointer;
-        border: 3px solid #000;
         border-radius: 8px;
         box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.6);
     }
     .proyecto img:hover {
-        border: 3px solid #9e9e9e;
         width: 99%;
         height: 215px;
         opacity: 1;
@@ -593,12 +594,12 @@ body {
         display: flex;
         height: auto;
         margin-bottom: 10px;
+        background-color: #3E5B80;
         width: 100%;
         justify-content: space-between;
         position: fixed;
         top: 0;
         left: 0;
-        background-color: #3E5B80;
         opacity: 0.8;
         padding: 10px;
         font-family: 'Roboto', sans-serif;
@@ -610,7 +611,6 @@ body {
         display: flex;
         height: auto;
         width: 100%;
-        background-color: #3c6e71;
         opacity: 0.8;
         padding: 5px;
         font-family: 'Roboto', sans-serif;
@@ -635,7 +635,6 @@ body {
         height: 550px;
     }
     .subtitle{
-        color: #3c6e71;
         font-family: 'Lobster', cursive;
         font-size: 1.8rem;
         justify-content: center;
@@ -704,18 +703,15 @@ body {
     }
     .titulo h3 {
         font-size: 1.7rem;
-        color: #284b63;
     }
     .proyecto img {
         width: 100%;
         height: 220px;
         cursor: pointer;
-        border: 3px solid #000;
         border-radius: 8px;
         box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.6);
     }
     .proyecto img:hover {
-        border: 3px solid #9e9e9e;
         width: 98%;
         height: 215px;
         opacity: 1;
@@ -734,7 +730,6 @@ body {
         display: flex;
         height: auto;
         width: 100%;
-        background-color: #3c6e71;
         opacity: 0.8;
         padding: 5px;
         font-family: 'Roboto', sans-serif;
@@ -795,7 +790,6 @@ body {
     }
     .titulo h3 {
         font-size: 2rem;
-        color: #284b63;
     }
     .proyecto {
         width: 30%;
@@ -807,12 +801,10 @@ body {
         width: 100%;
         height: 250px;
         cursor: pointer;
-        border: 3px solid #000;
         border-radius: 8px;
         box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.6);
     }
     .proyecto img:hover {
-        border: 3px solid #9e9e9e;
         width: 97%;
         height: 245px;
         opacity: 1;

@@ -65,6 +65,7 @@ function lenguajeEsp() {
         <li><i class="fab fa-html5"></i></li>
         <li><i class="fab fa-css3-alt"></i></li>
         <li><i class="fab fa-js-square"></i></li>
+        <li><i class="fab fa-react"></i></li>
         <li><i class="fab fa-github"></i></li>
         <li><i class="fab fa-wordpress"></i></li>
         <li><img src="media/icono/photoshop.svg" alt="logo Photoshop"></li>
@@ -254,8 +255,9 @@ function translate() {
     <div class="iconos">
         <ul>
             <li><i class="fab fa-html5"></i></li>
-            <li><i class="fab fa-css3-alt"></i></li>
+            <li><i class="fab fa-css3-alt"></i></li>  
             <li><i class="fab fa-js-square"></i></li>
+            <li><i class="fab fa-react"></i></li>
             <li><i class="fab fa-github"></i></li>
             <li><i class="fab fa-wordpress"></i></li>
             <li><img src="media/icono/photoshop.svg" alt="logo Photoshop"></li>
