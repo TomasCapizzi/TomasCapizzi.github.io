@@ -13,6 +13,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     margin: 0;
+    background-color: #293242;
 }
 
 .menu-der {
@@ -33,11 +34,11 @@ body {
 
 .links ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #ED6C4E;
 }
 
 .links ul li a:hover {
-    color: #d9d9d9;
+    color: #98C1D9;
 }
 
 .idioma ul {
@@ -45,7 +46,7 @@ body {
 }
 
 .subtitle{
-    color: #3c6e71;
+    color: #ED6C4E;
     font-family: 'Lobster', cursive;
     font-size: 1.8rem;
     justify-content: center;
@@ -59,20 +60,14 @@ body {
 .idioma ul li {
     list-style: none;
     cursor: pointer;
-    color: #fff;
+    color: #ED6C4E;
+    font-weight: bold;
 }
 
 .idioma ul li:hover {
     color: #d9d9d9;
 }
 
-.modo-oscuro button {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 1.1rem;
-    cursor: pointer;
-}
 
 .contenedor {
     display: flex;
@@ -128,6 +123,7 @@ body {
     font-size: 1.3rem;
     font-weight: 300;
     text-align: justify;
+    color: #98C1D9;
 }
 
 .iconos {
@@ -151,16 +147,16 @@ body {
 
 .iconos ul li img {
     width: 35px;
-    background-color: #284b63;
+    background-color: #ED6C4E;
 }
 
 .iconos ul li i {
     font-size: 2.4rem;
-    color: #3c6e71;
+    color: #ED6C4E;
 }
 
 .iconos ul li i:hover {
-    color: #284b63;
+    color: #98C1D9;
 }
 
 
@@ -196,7 +192,7 @@ body {
 
 .titulo h3 {
     font-size: 2rem;
-    color: #284b63;
+    color: #98C1D9;
     margin-right: 5px;
 }
 
@@ -204,14 +200,14 @@ body {
     width: 400px;
     height: 320px;
     cursor: pointer;
-    border: 3px solid #000;
+    border: 3px solid #ED6C4E;
     border-radius: 10px;
     box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.6);
     opacity: 1;
 }
 
 .proyecto img:hover {
-    border: 3px solid #9e9e9e;
+    border: 3px solid #98C1D9;
     width: 390px;
     height: 315px;
 }
@@ -229,6 +225,7 @@ body {
     text-align: justify;
     font-size: 1.3rem;
     font-family: 'Roboto', sans-serif;
+    color: #98C1D9;
 }
 
 .redes {
@@ -251,18 +248,18 @@ body {
 .redes ul li i {
     font-size: 3rem;
     cursor: pointer;
-    color: #3c6e71;
+    color: #ED6C4E;
 }
 
 .redes ul li i:hover {
-    color: #284b63;
+    color: #98C1D9;
 }
 
 .footer {
     width: 100%;
     justify-content: center;
-    background-color: #353535;
-    color: #fff;
+    background-color: #3E5B80;
+    color: #ED6C4E;
     padding: 25px;
     text-align: center;
 }
@@ -280,13 +277,8 @@ body {
     display: none;
 }
 
-
-/*
-https://coolors.co/353535-3c6e71-ffffff-d9d9d9-284b63
-*/
-
 .select {
-    color: #3c6e71;
+    color: #012d30;
 }
 
 .idioma-seleccionado {
@@ -606,7 +598,7 @@ https://coolors.co/353535-3c6e71-ffffff-d9d9d9-284b63
         position: fixed;
         top: 0;
         left: 0;
-        background-color: #3c6e71;
+        background-color: #3E5B80;
         opacity: 0.8;
         padding: 10px;
         font-family: 'Roboto', sans-serif;

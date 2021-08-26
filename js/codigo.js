@@ -50,9 +50,6 @@ function lenguajeEsp() {
     </div>
 </header>
 <div class="contenedor">
-<div class="portada">
-    <img src="media/portada/portada-final.png" alt="">
-</div>
 <div class="cv">
     <h2 class="subtitle" id="sobre-mi">Sobre mí</h2>
     <div class="descripcion">
@@ -70,10 +67,10 @@ function lenguajeEsp() {
         <li><i class="fab fa-js-square"></i></li>
         <li><i class="fab fa-github"></i></li>
         <li><i class="fab fa-wordpress"></i></li>
-        <li><img src="media/icono/adobephotoshop.svg" alt="logo Photoshop"></li>
-        <li><img src="media/icono/adobeillustrator.svg" alt="Logo Illustrator"></li>
-        <li><img src="media/icono/adobepremierepro.svg" alt="Logo Premiere"></li>
-        <li><img src='media/icono/adobeaftereffects.svg'></li>
+        <li><img src="media/icono/photoshop.svg" alt="logo Photoshop"></li>
+        <li><img src="media/icono/illustrator.svg" alt="Logo Illustrator"></li>
+        <li><img src="media/icono/premiere.svg" alt="Logo Premiere"></li>
+        <li><img src='media/icono/after-effects.svg'></li>
     </ul>
 </div>
 <div class="listado-proyectos">
@@ -242,9 +239,6 @@ function translate() {
     </div>
 </header>
 <div class="contenedor">
-    <div class="portada">
-        <img src="media/portada/portada-ingles.png" alt="">
-    </div>
     <div class="cv">
         <h2 class="hide" id="sobre-mi">Sobre mí</h2>
         <div class="img-titulo">
@@ -264,10 +258,10 @@ function translate() {
             <li><i class="fab fa-js-square"></i></li>
             <li><i class="fab fa-github"></i></li>
             <li><i class="fab fa-wordpress"></i></li>
-            <li><img src="media/icono/adobephotoshop.svg" alt="logo Photoshop"></li>
-            <li><img src="media/icono/adobeillustrator.svg" alt="Logo Illustrator"></li>
-            <li><img src="media/icono/adobepremierepro.svg" alt="Logo Premiere"></li>
-            <li><img src='media/icono/adobeaftereffects.svg'></li>
+            <li><img src="media/icono/photoshop.svg" alt="logo Photoshop"></li>
+            <li><img src="media/icono/illustrator.svg" alt="Logo Illustrator"></li>
+            <li><img src="media/icono/premiere.svg" alt="Logo Premiere"></li>
+            <li><img src="media/icono/after-effects.svg" alt="Logo After Effects"></li>
         </ul>
     </div>
     <div class="listado-proyectos">
